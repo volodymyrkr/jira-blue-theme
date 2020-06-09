@@ -117,15 +117,19 @@ body.ghx-rapid-views .aui-sidebar:not(.sidebar-placeholder), .aui-sidebar, .aui-
 }
 
 .aui-sidebar~.aui-page-panel {
-    padding-left: 0;
+    padding-left: 56px;
 }
 
 .aui-sidebar[aria-expanded=false] .aui-sidebar-wrapper {
     width: 56px;
 }
 
-.aui-sidebar[aria-expanded=false]~.aui-page-panel {
+body.ghx-rapid-views #gh {
     padding-left: 0;
+}
+
+.aui-sidebar[aria-expanded=false]~.aui-page-panel {
+    padding-left: 56px;
 }
 
 body.ghx-rapid-views.aui-sidebar-collapsed .aui-sidebar:not(.sidebar-placeholder) {
