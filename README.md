@@ -111,12 +111,13 @@ body:not(.aui-legacy-focus) .aui-header a:focus:before {
     height: 100%;
 }
 
-.aui-sidebar .aui-sidebar-wrapper {
+body.ghx-rapid-views .aui-sidebar:not(.sidebar-placeholder), .aui-sidebar, .aui-sidebar .aui-sidebar-wrapper {
     width: 200px;
+    flex-basis: 200px;
 }
 
 .aui-sidebar~.aui-page-panel {
-    padding-left: 200px;
+    padding-left: 0;
 }
 
 .aui-sidebar[aria-expanded=false] .aui-sidebar-wrapper {
@@ -124,7 +125,11 @@ body:not(.aui-legacy-focus) .aui-header a:focus:before {
 }
 
 .aui-sidebar[aria-expanded=false]~.aui-page-panel {
-    padding-left: 56px;
+    padding-left: 0;
+}
+
+body.ghx-rapid-views.aui-sidebar-collapsed .aui-sidebar:not(.sidebar-placeholder) {
+    flex-basis: 56px;
 }
 
 .aui-button.aui-button-primary.aui-style {
@@ -137,6 +142,42 @@ body:not(.aui-legacy-focus) .aui-header a:focus:before {
 
 .aui-button.aui-button-primary, .aui-button.aui-button-primary:visited {
     background-color: none;
+}
+
+span.subnav-container, .subnavigator-title {
+    display: none;
+}
+
+body.ghx-rapid-views #ghx-header {
+    padding: 5px 20px 5px 20px;
+}
+
+#ghx-modes-tools {
+    padding-bottom: 0;
+}
+
+.ghx-quick-content.aui-expander-content {
+    margin-bottom: 0;
+}
+
+.ghx-rapid-views #gh #ghx-work #ghx-pool-column #ghx-column-headers .ghx-column {
+    padding: 8px;
+}
+
+.ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-swimlane .ghx-swimlane-header {
+    top: 0;
+}
+
+#jira:not(.aui-sidebar-collapsed) span.subnav-page-header {
+    display: block;
+}
+
+div#ghx-view-selector {
+    width: 100%;
+}
+
+span.subnav-page-header {
+    padding: 6px 0;
 }
 
 ```
