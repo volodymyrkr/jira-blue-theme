@@ -127,4 +127,16 @@ body:not(.aui-legacy-focus) .aui-header a:focus:before {
     padding-left: 56px;
 }
 
+.aui-button.aui-button-primary.aui-style {
+    background-color: rgba(9,30,66,.08);
+}
+
+.aui-button.aui-button-primary:focus, .aui-button.aui-button-primary:hover {
+    background-color: #84a7da;
+}
+
+.aui-button.aui-button-primary, .aui-button.aui-button-primary:visited {
+    background-color: none;
+}
+
 ```
